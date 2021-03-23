@@ -1,0 +1,2 @@
+include ':automotive'
+rootProject.name = "AAHello"

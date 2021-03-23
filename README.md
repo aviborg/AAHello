@@ -1,10 +1,10 @@
 - Install Android Studio
 
-- Add tools: Settings->Appearance&Behavior->System Setting->Android SDK->SDK tools
-        - Android Auto Desktop Head Unit Emulator
-        - Android SDK Platform-Tools
-
 - Set mobile to development mode and Android Auto to develoment mode (tap 10 times on version)
+
+- Add tools: Settings->Appearance&Behavior->System Setting->Android SDK->SDK tools
+    - Android Auto Desktop Head Unit Emulator
+    - Android SDK Platform-Tools
 
 - Create new empty Android Auto project
 
@@ -28,8 +28,9 @@ dependencies {
 - Add service to AndroidManifest.xml:
 ```xml
         ...
-        xmlns:tools="http://schemas.android.com/tools"
-        ...
+        <meta-data
+            android:name="com.google.android.gms.car.application"
+            android:resource="@xml/automotive_app_desc"/>
         <service
             android:name=".HelloWorldService"
             android:exported="true">

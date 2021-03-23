@@ -1,3 +1,5 @@
+A tutorial is  available on https://youtu.be/VUYU2uIRq60
+
 - Install Android Studio
 
 - Set mobile to development mode and Android Auto to develoment mode (tap 10 times on version)
